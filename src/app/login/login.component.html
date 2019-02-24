@@ -1,0 +1,50 @@
+<div class="tela-login">
+  <div class="login-2 nome-empresa" style="flex: 1 1 0%; box-sizing: border-box;">
+    <div>
+      Plataforma Mais Justiça
+    </div>
+    <div>
+      <h6>Acompanhe seus processos pelo Núcleo Jurídico</h6>
+    </div>
+  </div>
+  <div class="login">
+    <form [formGroup]="profileForm" class="form-signin">
+      <h4 style="text-align: center">Plataforma Mais Justiça</h4>
+      <h5 style="text-align: center">INFORME SEU LOGIN</h5>
+
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="email" required>
+          <mat-error *ngIf="profileForm.value.email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Senha</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+
+      </div>
+
+      <div class="checkbox mb-3 margem">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <a class="esqueci-senha" href="/pages/auth/forgot-password-2"> Esqueci minha senha </a>
+      </div>
+      <button class="btn btn-sm btn-primary btn-block botao" type="submit" (click)="login()">ENTRAR</button>
+
+      <br>
+      <br>
+      <div class="register" fxlayout="column" fxlayoutalign="center center"
+        style="flex-direction: column; box-sizing: border-box; display: flex; place-content: center; align-items: center;">
+        <span class="text">Não possui uma conta?</span><a class="link" href="/pages/auth/register-2">Crie uma
+          Conta!</a></div>
+
+
+    </form>
+  </div>
+</div>

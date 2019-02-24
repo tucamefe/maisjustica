@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Muli, "Helvetica Neue", sans-serif; 
+background-color: #f5f5f5; }
+
+
+@font-face {
+    font-family: "Muli";
+    src: url("./assets/fonts/muli/Muli-Regular.ttf");
+}
+
+@media (min-width: 1200px) {
+
+    .navbar {
+        justify-content: flex-start !important; 
+    }
+}
+
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    background-color: #379BE5;
+    color: #fff;
+}
+
+.mat-step-label-selected {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mat-content {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    overflow: visible !important;
+}

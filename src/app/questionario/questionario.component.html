@@ -1,0 +1,83 @@
+<app-menu></app-menu>
+<div class="secao-pagina">
+    <mat-icon _ngcontent-c273="" class="secondary-text s-18 mat-icon material-icons mat-icon-no-color" role="img"
+        aria-hidden="true">home</mat-icon>
+    <mat-icon _ngcontent-c273="" class="secondary-text s-16 mat-icon material-icons mat-icon-no-color" role="img"
+        aria-hidden="true">chevron_right</mat-icon>
+    <span _ngcontent-c273="" class="secondary-text">Novo Processo</span>
+    <div style="padding-bottom:0px; padding-top: 10px;">
+        Questionário
+    </div>
+    <div class="subtitulo">
+        Conte o que aconteceu para a gente te ajudar a montar seu processo.<br>
+        Temos uma lista de modelos pra você!
+    </div>
+</div>
+
+<div class="processo-linha-pai">
+
+    <h2>Conte-nos mais sobre o problema</h2>
+
+    <mat-vertical-stepper [linear]="isLinear" #stepper step="2">
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Com quem foi?</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Selecione</mat-label>
+                    <mat-select [disabled]="disableSelect.value" (selectionChange)="goForward($this)">
+                        <mat-option value="option1">Celpe</mat-option>
+                        <mat-option value="option2">Operadora de Celular</mat-option>
+                        <mat-option value="option3">Compesa</mat-option>
+                        <mat-option value="option3">Outros</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Próximo</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Qual foi?</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Selecione</mat-label>
+                    <mat-select [disabled]="disableSelect.value" (selectionChange)="goForward($this)">
+                        <mat-option value="option1">Cortaram a minha luz</mat-option>
+                        <mat-option value="option2">Cobraram demais</mat-option>
+                        <mat-option value="option3">Já paguei e ainda estão me cobrando</mat-option>
+                        <mat-option value="option3">Outros</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Próximo</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="thirdFormGroup">
+            <form [formGroup]="thirdFormGroup">
+                <ng-template matStepLabel>Quando aconteceu?</ng-template>
+                    
+                    <mat-form-field appearance="outline">
+                            <mat-label>Selecione uma data</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Próximo</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+                <ng-template matStepLabel>Pronto</ng-template>
+                Questionário finalizado!            <div>
+                </div>
+            </mat-step>
+    </mat-vertical-stepper>
+
+
+    <!-- Copyright 2018 Google Inc. All Rights Reserved.
+                      Use of this source code is governed by an MIT-style license that
+                      can be found in the LICENSE file at http://angular.io/license -->
+
+</div>

@@ -1,0 +1,126 @@
+<app-menu></app-menu>
+<div class="secao-pagina">
+    <mat-icon _ngcontent-c273="" class="secondary-text s-18 mat-icon material-icons mat-icon-no-color" role="img"
+        aria-hidden="true">home</mat-icon>
+    <mat-icon _ngcontent-c273="" class="secondary-text s-16 mat-icon material-icons mat-icon-no-color" role="img"
+        aria-hidden="true">chevron_right</mat-icon>
+    <span _ngcontent-c273="" class="secondary-text">Processos</span>
+    <div style="padding-bottom:0px; padding-top: 10px;">
+        Processos
+    </div>
+    <div class="subtitulo">
+        Visualize seus processos em andamento
+    </div>
+</div>
+
+<div class="processo-linha-pai">
+
+    <mat-icon matTooltip="2 Novas Notificações!"
+        class="red-fg mat-icon material-icons mat-icon-no-color ng-star-inserted" role="img" aria-hidden="true"
+        style="float:right; cursor: pointer;">error</mat-icon>
+
+    <div style="float:right; margin-top: -10px;">
+
+        <button class="ng-tns-c91-3213 mat-icon-button navbar-toggler" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Mais" mat-icon-button="" data-toggle="modal" data-target="#detalheModal"><span
+                class="mat-button-wrapper">
+                <mat-icon class="mat-icon ng-tns-c91-3213 material-icons mat-icon-no-color" role="img"
+                    aria-hidden="true">
+                    more_vert</mat-icon>
+            </span>
+            <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+            <div class="mat-button-focus-overlay"></div>
+        </button>
+    </div>
+
+    
+    <div>
+            <div class="list-info verde">
+                    Número do Processo
+                </div>
+
+        <mat-accordion class="example-headers-align">
+            <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                <mat-expansion-panel-header >
+                    <mat-panel-title class="list-info-num" >
+                        5467387-23.2019.8.07.8001
+                    </mat-panel-title>
+                    <mat-panel-description>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <hr>
+                
+                <br><br>
+                <h5>Movimentações do Processo </h5><br>
+                <h6>15/05/2019 - Ajuizamento do Processo</h6>
+                <h6>OBA... AUDIÊNCIA MARCADA!</h6> <br>
+                A sua primeira audiência foi marcada para o dia <i>00/00/0000</i>. É uma <strong style="color: #3f823a;">audiência de conciliação</strong>, nela
+                você poderá fazer um acordo, ou não, com o <i>(Réu)</i>. 
+                Além de ser importante não faltar, é essencial que você esteja preparado e sabendo os seus direitos.
+                Para isso, marca um <strong style="color: #3f823a;">atendimento</strong> com um dos nossos Núcleos de Prática Jurídica parceiros, que lá
+                terá uma galera preparada para te dar o suporte necessário.
+                <br><br>
+                <hr>
+                <br><br>
+                <h6>30/05/2019 - Sentença</h6>
+                <h6>SAIU A SUA SENTENÇA!</h6> <br>
+                O (Réu) foi condenado na ação que você promoveu contra ele! O Juiz ordenou que ele te pague R$ (valor)
+                como condenação por danos morais/materiais. Agora é só você aguardar o cumprimento da sentença.
+                Se liga! O (Réu) tem até 15 dias (a partir da publicação) para entrar com um recurso. Se isso acontecer
+                você poderá responder, só que será necessário um advogado e isso significa que a nossa parceria fica por
+                aqui ☹.
+                Mas se o (Réu) não recorrer e também não te pagar, é só você pedir o cumprimento da sentença, nesse caso
+                a gente te dá a orientação necessária 😊
+                Não sabe o que significa algumas palavras desse texto? Passa lá na aba “vocabulário” que a gente te
+                explica.
+                Ah, caso isso seja uma despedida, não esquece de nos contar como foi sua experiência! Lembra que a
+                justiça é para todos e a gente tá aqui para te ajudar nessa jornada. Tchau!
+
+            
+
+
+            </mat-expansion-panel>
+        </mat-accordion>
+
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="detalheModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detalhar Processo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="list-info verde">
+                    Número do Processo
+                </div>
+                <div class="list-info-num">
+                    74677887-55.2019.8.07.8001
+                </div>
+                <div class="list-info label">
+                    Autor
+                </div>
+                <div class="list-info info">
+                    FERNANDO BORGES SANTANA
+                </div>
+                <div class="list-info label">
+                    Réu
+                </div>
+                <div class="list-info info">
+                    MARIO GOMES ALMDEIDA
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>

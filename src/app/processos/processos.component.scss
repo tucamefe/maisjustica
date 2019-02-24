@@ -1,0 +1,118 @@
+.secao-pagina {
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #379BE5;
+    color: #fff;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+.processo-linha-pai {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: -20px;
+    padding: 30px;
+}
+
+.s-18, .secondary-text {
+    font-size: 16px!important;
+    width: 16px!important;
+    height: 16px!important;
+    min-width: 16px!important;
+    min-height: 16px!important;
+    line-height: 16px!important;
+    color: rgba(255,255,255,.7)!important;
+}
+
+.processo-linha-filho {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 30px;
+    color: #212121;
+}
+
+.list-info{
+    font-size: 13px;
+    font-weight: 100;
+    color: #a3a3a3;
+}
+
+.verde {
+    color: #3f823a;
+    margin-left: 30px;
+}
+
+.list-info-num {
+    font-size: 20px;
+    margin-left: 30px;
+    color: #1665c0;
+    margin-top: -20px;
+    z-index: 2;
+}
+
+.info {
+    color: #424242;
+}
+
+
+.label {
+    margin-top: 8px;
+    color: #a3a3a3;
+}
+
+.label-primeira {
+    margin-top: 15px;
+    color: #a3a3a3;
+}
+
+.subtitulo {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.red-fg {
+    color: #f44336!important;
+}
+
+.mat-expansion-panel-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0px !important;
+    border-radius: inherit;
+    height: fit-content; 
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+.h6, h6 {
+    letter-spacing: 0.75px;
+    color: #737373;
+    font-weight: 100px !important;
+}
+
+hr {
+    margin-top: 0px;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
